@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta charset, viewport for mobile, and SEO tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Jake Barnard's Portfolio</title>
+  <meta name="description" content="Contact Page - Personal portfolio of Jake Barnard.">
+  <!-- Link to  CSS files-->
+    
+    <link rel="stylesheet" href="../assets/global-styles/base.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../components/contact/contact.css">
+    <link rel="stylesheet" href="../components/footer/footer.css">
+    <link rel="stylesheet" href="../components/home/home.css">
+</head>
+<body>
+  <!-- Main header and navigation -->
+  <header class="site-header">
+  <div class="container inner">
+    <a class="heading" href="index.html">Jake Barnard</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+  <main>
+    <!-- Contact Page contact -->
+<section class="container section">
+  <!-- Description of Contact page -->
+  <h1 id="page-title" tabindex="0">Contact</h1>
+  <p>Use the form below to get in touch with me. Incase of emergency contact me using the Email address provided in the page footer.</p>
+</section>
+
+<!-- Contact form made into one card -->
+<section class="container">
+  <article class="card contact-card">
+    <form class="form-grid" method="get" action="#">
+      <div class="row">
+        <div>
+          <!-- Enter name, Required -->
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Full Name" required>
+        </div>
+        <div>
+          <!-- Enter email, Required -->
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="@example.com" required>
+        </div>
+      </div>
+      <div>
+        <!-- Message to me -->
+        <label for="subject">Message</label>
+        <input id="subject" name="subject" type="text" placeholder="Question">
+      </div>
+      <div>
+        <!-- Button confirming details and message -->
+        <button class="btn" type="submit" aria-disabled="true">Send</button>
+      </div>
+    </form>
+  </article>
+</section>
+
+  </main>
+  <!-- Main footer and contact information -->
+ <footer class="site-footer">
+  <div class="container inner">
+    <p>Email: Jake-Barnard@live.nmit.ac.nz</p>
+    <p>Location: Nelson</p>
+  </div>
+</footer>
+</body>
+</html>
