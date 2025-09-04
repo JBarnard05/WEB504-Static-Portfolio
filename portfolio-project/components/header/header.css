@@ -1,0 +1,40 @@
+.site-header {
+  position: sticky; 
+  top: 0; 
+  z-index: 50;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: saturate(180%) blur(6px);
+  background: color-mix(in oklab, var(--bg) 90%, transparent);
+}
+
+.site-header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.heading { 
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: -.02em; 
+}
+
+.nav { 
+  
+  display: flex;
+  gap: .75rem;
+  align-items: center; 
+}
+
+.nav a {
+  color: var(--text);
+  padding: .4rem .7rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.nav a[aria-current="page"] { 
+  border-color: var(--border); 
+  background: color-mix(in srgb, var(--card) 80%, transparent); 
+}
