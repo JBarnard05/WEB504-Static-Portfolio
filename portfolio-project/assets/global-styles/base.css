@@ -1,0 +1,91 @@
+:root {
+  --bg: #0b1120;
+  --text: #e5e7eb;
+  --greyed: #94a3b8;
+  --brand: #818cf8;
+  --brand-contrast: #0b1120;
+  --border: #1f2937;
+  --card: #0b132b;
+  --shadow: none;
+  --radius: 14px;
+  --maxw: 1100px;
+  --space: clamp(1rem, 2vw, 1.25rem);
+}
+
+/* structure and typography */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji';
+  font-size: 16px;
+}
+
+.container {
+  width: min(100% - 2rem, var(--maxw));
+  margin-inline: auto;
+}
+
+.section {
+  padding: calc(var(--space) * 3) 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: .75rem 1rem;
+  border-radius: 999px;
+  background: var(--brand);
+  color: var(--brand-contrast);
+  border: 1px solid transparent;
+  box-shadow: var(--shadow);
+  transition: transform .12s ease, box-shadow .2s ease, opacity .2s ease;
+}
+
+.btn:hover,
+.btn:focus { 
+  transform: translateY(-1px);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: clip;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space);
+}
+
+h1,h2,h3 { 
+  margin-bottom: 0.7em;
+}
+
+/* grid columns */
+@media (min-width: 700px) {
+  .grid.cols-3{ 
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .grid.cols-2{ 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* Grids */
+.structure-grid { 
+  margin-top: var(--space); 
+}
+
+.structure-card img { 
+  aspect-ratio: 4/3; 
+  object-fit: cover; 
+}
+
+.structure-card .pad { 
+  padding: .9rem; 
+}
+
+.structure-card h3 {
+  font-size: 1.1rem; 
+}
