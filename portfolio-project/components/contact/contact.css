@@ -1,0 +1,32 @@
+.contact-card { 
+  padding: 1rem;
+}
+
+.form-grid { 
+  display: grid; 
+  gap: .75rem; 
+}
+
+.form-grid .row { 
+  display: grid; 
+  gap: .75rem; 
+}
+
+@media (min-width: 700px) { 
+  .form-grid 
+  .row { 
+    grid-template-columns: 1fr 1fr; 
+  } 
+}
+
+label { 
+  font-weight: 600; 
+  font-size: .95rem; 
+}
+
+input {
+  padding: .7rem .8rem; 
+  border-radius: 10px; 
+  border: 1px solid var(--border); 
+  background: var(--card);
+}
